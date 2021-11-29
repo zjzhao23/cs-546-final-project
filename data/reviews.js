@@ -3,7 +3,7 @@ const restaurantFunctions = require("./recipes.js");
 const restaurants = mongoCollections.restaurants;
 const reviews = mongoCollections.reviews;
 let { ObjectId } = require("mongodb");
-const helper = require("helper");
+const helper = require("./helper");
 
 module.exports = {
   async create(restaurantId, title, reviewer, rating, dateOfReview, review) {

@@ -1,8 +1,7 @@
 const mongoCollections = require("../config/mongoCollections");
 const users = mongoCollections.users;
 let { ObjectId } = require("mongodb");
-const { users } = require(".");
-const helper = require("helper");
+const helper = require("./helper");
 
 module.exports = {
   async create(firstName, lastName, email, username, age, hashPassword) {

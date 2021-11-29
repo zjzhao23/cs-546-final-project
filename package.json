@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "seed": "node ./tasks/seed.js"
+    "seed": "node ./tasks/seed.js",
+    "ingredient-seed": "node ./tasks/ingredient-seed.js"
   },
   "author": "Priyanka Popeta 10466298",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "handlebars": "^4.7.7",
     "mongodb": "^3.7.3"
   }
 }

@@ -1,5 +1,5 @@
 const dbConnection = require("../config/mongoConnection");
-const data = require("../data/");
+const data = require("../data");
 const restaurants = data.restaurants;
 const reviews = data.reviews;
 
@@ -40,6 +40,6 @@ async function main() {
   await db.serverConfig.close();
 }
 
-main().catch(error => {
+main().catch((error) => {
   console.log(error);
 });
